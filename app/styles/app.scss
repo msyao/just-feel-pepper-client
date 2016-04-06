@@ -1,2 +1,28 @@
 @import 'bootstrap';
 @import 'bootstrap/theme';
+
+.headerhome {
+  padding-top: 2em;
+}
+
+.navbar-inverse {
+  background-image: none;
+  background-color: #FF0000;
+  border-color: #FF4E0D
+}
+.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus {
+  background-color: #fff
+}
+
+.navbar-inverse .navbar-brand {
+  color: #fff
+}
+.navbar-inverse .navbar-brand:hover {
+  color: #03B500
+}
+.navbar-inverse .navbar-nav>li>a {
+  color: #fff
+}
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { color: #03B500}
+.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { color: #ffffff}
+.navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus { color: #03B500}
