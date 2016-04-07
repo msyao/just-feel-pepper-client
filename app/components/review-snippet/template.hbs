@@ -1,0 +1,8 @@
+<!-- review-snippet/template.hbs -->
+{{review-form routeCreateReview='createReview'}}
+
+{{#each model.review as |eachReview|}}
+  {{review-snippet review=eachReview
+                    routeUpdateReview='updateReview'
+                    routeDestroyReview='destroyReview'}}
+{{/each}}

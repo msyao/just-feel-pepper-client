@@ -1,0 +1,28 @@
+<!-- component/post-snippet/template.hbs -->
+<br> <br>
+{{#unless isEditable}}
+  <table>
+      <tr>
+        <td>{{post.title}}</td>
+        <td>{{post.description}}</td>
+        <td>{{post.website}}</td>
+      </tr>
+    </table>  <hr class="style-two">
+
+<!-- have link to review page -->
+
+{{else}}
+<table>
+    <tr>
+      <td>{{input value = post.title}}</td>
+      <td>{{input value = post.description}}</td>
+      <td>{{input value = post.website}}</td>
+    </tr>
+
+
+</table>  <hr class="style-two">
+
+
+  <button {{action 'updatePost'}}>EDIT</button>
+  <button {{action 'destroyPost'}}>DESTROY</button>
+{{/unless}}

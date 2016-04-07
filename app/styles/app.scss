@@ -1,5 +1,7 @@
 @import 'bootstrap';
 @import 'bootstrap/theme';
+@import 'colors';
+@import 'post.scss';
 
 .headerhome {
   padding-top: 2em;
@@ -7,22 +9,25 @@
 
 .navbar-inverse {
   background-image: none;
-  background-color: #FF0000;
-  border-color: #FF4E0D
+  background-color: $red;
+  border-color: $orange;
 }
 .navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus {
-  background-color: #fff
+  background-color: $white;
 }
 
-.navbar-inverse .navbar-brand {
-  color: #fff
+.navbar-inverse
+.navbar-brand {
+  color: $white;
 }
-.navbar-inverse .navbar-brand:hover {
-  color: #03B500
+.navbar-inverse
+.navbar-brand:hover {
+  color: $green;
 }
-.navbar-inverse .navbar-nav>li>a {
-  color: #fff
+.navbar-inverse
+.navbar-nav>li>a {
+  color: $white;
 }
 .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { color: #03B500}
-.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { color: #ffffff}
+.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { color: $white}
 .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus { color: #03B500}

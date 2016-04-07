@@ -1,0 +1,10 @@
+<!-- app/post/template.hbs-->
+{{post-form routeCreatePost='createPost'}}
+<ul>
+{{#each model.post as |eachPost|}}
+  {{post-snippet post=eachPost
+      routeUpdatePost='updatePost'
+      routeDestroyPost='destroyPost'
+  }}
+{{/each}}
+</ul>

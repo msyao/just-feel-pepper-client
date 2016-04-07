@@ -1,0 +1,28 @@
+@import 'colors';
+
+.post-table-header {
+  margin-left: 2em;
+  font-size: 22px;
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  color: $tablegreen;
+  text-align: center;
+
+}
+
+td {
+  text-align: left;
+}
+
+hr.style-two {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(7,190,53,0.4), rgba(0, 0, 0, 0));
+}
