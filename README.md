@@ -5,24 +5,28 @@ WDI Capstone Project: A Pepper Review app by Yao.
 Both of these are viewable on [Trello](https://trello.com/b/Q1Rcw2Lr/take-a-veyhttps://trello.com/b/FzoDbOkG/just-feel-pepper).
 
 ##Explanation of App
-This web app allows logged-in users to create custom surveys. Once survey is created and completed, results of the survey will be collected and rendered on a dashboard. From the Dashboard view, users have the options to **CRUD**: create new surveys, edit questions within an existing survey, and delete a survey.
+This web app allows logged-in users to post rating and reviews on peppers.
 
-There are only one type of survey:
-Text - a user creates a question title, description, and the survey taker is then given a text field to write an answer.
+###Unregistered View:
+-   Must log in to post reviews as regular users.
 
-###Technologies Used
+###Registered View:
+-   Admin users can CRUD on both posts and reviews.
+-   Regular users can CRUD on reviews.
 
-- Handlebars
-- HTML5
-- SCSS
-- Postgres
-- Ruby On Rails
-- Ember.js Framework
-- Javascript
-- Bootstrap
-- Heroku
-- Git
-- Axure
+##Technologies Used
+
+-   Handlebars
+-   HTML5
+-   SCSS
+-   Postgres
+-   Ruby On Rails
+-   Ember.js Framework
+-   Javascript
+-   Bootstrap
+-   Heroku
+-   Git
+-   Axure
 
 ##Deployed front end link
 Please [Just Feel Pepper]().
