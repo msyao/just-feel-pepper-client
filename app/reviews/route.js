@@ -5,19 +5,19 @@ export default Ember.Route.extend({
   model: function(){
     return {
       post: this.store.findAll('post'),
-      review: this.store.findAll('review')
+      reviews: this.store.findAll('review')
     };
   },
   actions: {
     createReview: function(properties, postTitle){
       console.log('Route Action : createReview');
-      let observedPost = this.store.peekAll('post').find(function(post){
+      let createdPost = this.store.peekAll('post').find(function(post){
         return post.get('title') === postTitle;
       });
       let newReview = this.store.createRecord('review', properties);
-      observedPost.get('review').pushObject(newReview);
+      createdPost.get('reviews').pushObject(newReview);
+      console.log(newReview);
       newReview.save().then(()=>console.log('record created'));
-
     },
     updateReview: function(review, newPostTitle) {
       console.log('Route Action : updateReview');

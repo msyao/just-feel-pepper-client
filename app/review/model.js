@@ -6,6 +6,6 @@ export default DS.Model.extend({
   rating: DS.attr('number'),
   comment: DS.attr('string'),
 
-  post: DS.attr()
-  //post: DS.belongsTo('post', {async: true})
+  // post: DS.attr()
+  post: DS.belongsTo('post', {async: true})
 });

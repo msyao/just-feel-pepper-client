@@ -6,6 +6,6 @@ export default DS.Model.extend({
   description: DS.attr('string'),
   website: DS.attr('string'),
 
-  review: DS.attr()
-  //review: DS.hasMany('review', {async: true})
+  // reviews: DS.attr()
+  reviews: DS.hasMany('review', {async: true})
 });

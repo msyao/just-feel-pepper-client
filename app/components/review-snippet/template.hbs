@@ -1,8 +1,16 @@
-<!-- review-snippet/template.hbs -->
-{{review-form routeCreateReview='createReview'}}
+<!-- components/review-snippet/template.hbs -->
+<hr>
+<div>
+{{#unless isEditable}}
+  <p> {{review.post.title}}</p>
+  <p> {{review.rating}}</p>
+  <p> {{review.comment}}</p>
 
-{{#each model.review as |eachReview|}}
-  {{review-snippet review=eachReview
-                    routeUpdateReview='updateReview'
-                    routeDestroyReview='destroyReview'}}
-{{/each}}
+
+{{else}}
+  <p>Rating: {{input value=review.rating}}</p>
+  <p>Comment: {{input value=review.comment}}</p>
+  <button {{action 'updateReview'}}>EDIT</button>
+  <button {{action 'destroyReview'}}>DESTROY</button>
+{{/unless}}
+</div>

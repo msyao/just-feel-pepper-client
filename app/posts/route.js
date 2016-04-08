@@ -20,7 +20,7 @@ export default Ember.Route.extend({
     },
     destroyPost: function(post){
       console.log('Route Action : destroyPost');
-      post.get('review').forEach((review)=>review.destroyRecord());
+    //  post.get('review').forEach((review)=>review.destroyRecord());
       post.destroyRecord();
     }
   }

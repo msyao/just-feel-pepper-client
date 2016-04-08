@@ -3,6 +3,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  isEditable: false,
   form: {},
   actions: {
     createPost: function(){
@@ -10,5 +11,8 @@ export default Ember.Component.extend({
       this.sendAction('routeCreatePost', this.get('form'));
       this.set('form', {});
     }
+  },
+  doubleClick: function(){
+    this.toggleProperty('isEditable');
   }
 });

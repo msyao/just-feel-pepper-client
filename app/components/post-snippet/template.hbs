@@ -7,7 +7,7 @@
         <td>{{post.description}}</td>
         <td>{{post.website}}</td>
       </tr>
-    </table>  <hr class="style-two">
+    </table>  <hr>
 
 <!-- have link to review page -->
 
@@ -23,6 +23,6 @@
 </table>  <hr class="style-two">
 
 
-  <button {{action 'updatePost'}}>EDIT</button>
-  <button {{action 'destroyPost'}}>DESTROY</button>
+  <button {{action 'updatePost'}} class="btn btn-default">EDIT</button>
+  <button {{action 'destroyPost'}} class="btn btn-danger">DESTROY</button>
 {{/unless}}

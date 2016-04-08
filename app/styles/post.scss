@@ -21,8 +21,10 @@ td {
   text-align: left;
 }
 
-hr.style-two {
-    border: 0;
-    height: 2px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(7,190,53,0.4), rgba(0, 0, 0, 0));
+.post-form {
+  margin: 0 auto;
+}
+input {
+    margin: 8px 0;
+    border: none;
 }
