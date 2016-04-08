@@ -27,8 +27,8 @@ Text - a user creates a question title, description, and the survey taker is the
 ##Deployed front end link
 Please [Just Feel Pepper]().
 
-##Capstone front end repo
-[Just Feel Pepper Front End](https://github.com/msyao/just-feel-pepper-api).
+##Capstone back end repo
+[Just Feel Pepper Back End](https://github.com/msyao/just-feel-pepper-api).
 
 ##Future Features
 1. Have pepper-shaped rating icons for users to rate and calculate average spiciness from data
