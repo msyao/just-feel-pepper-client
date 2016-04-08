@@ -1,30 +1,26 @@
 <!-- component/post-form/template.hbs -->
-
 <h2> Make It Pepper With A Post! </h2>
-
 {{#unless isEditable}}
-<div class='post-form'>
+<div>
   {{post.title}}
   {{post.description}}
   {{post.website}}
 </div>
-
+<br>
 {{else}}
 
-<div class='post-form'>
+<div>
   {{input placeholder='Title' value=form.title}}
   {{input placeholder='Description' value=form.description}}
   {{input placeholder='Website' value=form.website}}
 </div>
-<button {{action 'createPost'}} class="btn btn-success"> Pepper It Up </button>
-
 <br>
-<br>
-
+<button {{action 'createPost'}} class="btn btn-success"> Add a New Post </button>
 {{/unless}}
 
 
-
+<br>
+<br>
 <table class="post-table-header">
 <thead>
   <tr>

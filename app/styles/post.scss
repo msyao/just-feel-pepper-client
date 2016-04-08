@@ -17,14 +17,19 @@ th {
 
 }
 
+h2 {
+  text-align: center;
+}
 td {
   text-align: left;
 }
 
-.post-form {
-  margin: 0 auto;
+hr.style-two {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(7,190,53,0.4), rgba(0, 0, 0, 0));
 }
+
 input {
-    margin: 8px 0;
-    border: none;
+  margin: 8px;
 }
