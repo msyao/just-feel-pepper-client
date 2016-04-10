@@ -17,7 +17,11 @@ export default Ember.Route.extend({
       let newReview = this.store.createRecord('review', properties);
       createdPost.get('reviews').pushObject(newReview);
       console.log(newReview);
-      newReview.save().then(()=>console.log('record created'));
+      newReview.save().then(()=>console.log('record created'))
+      .then(() => {
+        this.get('flashMessages')
+        .success('You have posted a review!');
+      });
     },
     updateReview: function(review, newPostTitle) {
       console.log('Route Action : updateReview');

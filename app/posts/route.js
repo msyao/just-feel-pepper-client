@@ -12,7 +12,11 @@ export default Ember.Route.extend({
     createPost: function(properties){
       console.log('Route Action : createPost');
       this.store.createRecord('post', properties)
-        .save().then(()=>console.log('record created'));
+        .save().then(()=>console.log('record created'))
+        .then(() => {
+          this.get('flashMessages')
+          .success('You have created a post!');
+        });
     },
     updatePost: function(post) {
       console.log('Route Action : updatePost');
