@@ -1,28 +1,24 @@
 <!-- component/post-snippet/template.hbs -->
 <br> <br>
 {{#unless isEditable}}
-  <table>
-      <tr>
-        <td>{{post.title}}</td>
-        <td>{{post.description}}</td>
-        <td>{{post.website}}</td>
-      </tr>
-    </table>  <hr class="style-two">
+  <div class="row">
+    <div class="col-sm-3">{{post.title}}</div>
+    <div class="col-sm-5">{{post.description}}</div>
+    <div class="col-sm-4">{{post.website}}<</div>
+  </div>
+  <hr class="style-two">
 
 <!-- have link to review page -->
 
 {{else}}
-<table>
-    <tr>
-      <td>{{input value = post.title}}</td>
-      <td>{{input value = post.description}}</td>
-      <td>{{input value = post.website}}</td>
-    </tr>
+<div class="row">
+  <div class="col-sm-3">{{input value = post.title}}</div>
+  <div class="col-sm-5">{{input value = post.description}}</div>
+  <div class="col-sm-4">{{input value = post.website}}<</div>
+</div>
+<hr class="style-two">
 
 
-</table>  <hr class="style-two">
-
-
-  <button {{action 'updatePost'}} class="btn btn-default">EDIT</button>
-  <button {{action 'destroyPost'}} class="btn btn-danger">DESTROY</button>
+<button {{action 'updatePost'}} class="btn btn-default">EDIT</button>
+<button {{action 'destroyPost'}} class="btn btn-danger">DESTROY</button>
 {{/unless}}
