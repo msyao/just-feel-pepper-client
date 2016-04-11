@@ -12,11 +12,11 @@ Router.map(function () {
   this.route('sign-in');
   this.route('change-password');
   this.route('users');
-  this.route('user', { path: 'users/:user_id'});
+  //this.route('user', { path: 'users/:user_id'});
   this.route('posts');
-  this.route('post', { path: 'posts/:post_id'});
+  //this.route('post', { path: 'posts/:post_id'});
   this.route('reviews');
-  this.route('review', { path: 'reviews/:review_id'});
+  //this.route('review', { path: 'reviews/:review_id'});
 
 });
 
