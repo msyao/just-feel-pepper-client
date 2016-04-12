@@ -13,8 +13,8 @@
 {{else}}
 <div class="row">
   <div class="col-sm-3">{{review.post.title}}</div>
-  <div class="col-sm-3">{{input value=review.rating}}</div>
-  <div class="col-sm-6">{{input value=review.comment}}</div>
+  <div class="col-sm-3">Rating: {{input value=review.rating}}</div>
+  <div class="col-sm-6">Comment: {{input value=review.comment}}</div>
   <button {{action 'updateReview'}} class="btn btn-default">EDIT</button>
   <button {{action 'destroyReview'}} class="btn btn-danger">DELETE</button>
 </div>
