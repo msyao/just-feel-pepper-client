@@ -1,22 +1,21 @@
 <!-- components/review-snippet/template.hbs -->
-<hr>
-
+<br>
+<br>
 {{#unless isEditable}}
   <div class="row">
     <div class="col-sm-3">{{review.post.title}}</div>
     <div class="col-sm-3">{{review.rating}}</div>
     <div class="col-sm-6">{{review.comment}}</div>
   </div>
+  <hr class="style-two">
 
 
 {{else}}
 <div class="row">
-  <div class="col-sm-3">Pepper: {{review.post.title}}</div>
-  <div class="col-sm-3">Rating: {{input value=review.rating}}</div>
-  <div class="col-sm-6">Comment: {{input value=review.comment}}</div>
-</div>
-<div class="row">
+  <div class="col-sm-3">{{review.post.title}}</div>
+  <div class="col-sm-3">{{input value=review.rating}}</div>
+  <div class="col-sm-6">{{input value=review.comment}}</div>
   <button {{action 'updateReview'}} class="btn btn-default">EDIT</button>
-  <button {{action 'destroyReview'}} class="btn btn-danger">DESTROY</button>
+  <button {{action 'destroyReview'}} class="btn btn-danger">DELETE</button>
 </div>
 {{/unless}}
