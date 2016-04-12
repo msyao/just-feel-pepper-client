@@ -4,7 +4,7 @@
   <div class="row">
     <div class="col-sm-3">{{post.title}}</div>
     <div class="col-sm-5">{{post.description}}</div>
-    <div class="col-sm-4">{{post.website}}<</div>
+    <div class="col-sm-4">{{post.website}}</div>
   </div>
   <hr class="style-two">
 
@@ -18,7 +18,8 @@
 </div>
 <hr class="style-two">
 
-
+<div class="row">
 <button {{action 'updatePost'}} class="btn btn-default">EDIT</button>
 <button {{action 'destroyPost'}} class="btn btn-danger">DESTROY</button>
+</div>
 {{/unless}}

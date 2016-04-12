@@ -1,8 +1,14 @@
 <!-- component/review-form/template.hbs -->
-<h5> Review A Pepper </h5>
-<div>
-  {{input placeholder='Post Title' value=postTitle}}
-  {{input placeholder='Rating Of Spiciness' value=reviewForm.rating}}
-  {{input placeholder='Comment' value=reviewForm.comment}}
+<h2> Review A Pepper </h2>
+<br>
+<div class="row">
+  <button class="btn btn-success create-button" data-toggle="collapse" data-target="#review-form"> Add A Review </button>
 </div>
-<button {{action 'createReview'}} class="btn btn-success"> Submit </button>
+<div id="review-form" class="collapse now">
+  <div class="col-sm-3">{{input placeholder='Post Title' value=postTitle}}</div>
+  <div class="col-sm-3">{{input placeholder='Rating Of Spiciness' value=reviewForm.rating}}</div>
+  <div class="col-sm-6">{{input placeholder='Comment' value=reviewForm.comment}}</div>
+  <div class="row">
+    <button {{action 'createReview'}} class="btn btn-warning create-button">Review!</button>
+  </div>
+</div>
