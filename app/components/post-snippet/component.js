@@ -8,6 +8,7 @@ export default Ember.Component.extend({
   // numReviews: Ember.computed('post.reviews.@each', function(){
   //   return this.get('post.reviews').get('length');
   // }),
+  // classNames: ['post-snippet'],
   isEditable: false,
   actions: {
     updatePost: function(){

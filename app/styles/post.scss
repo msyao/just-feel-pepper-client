@@ -14,10 +14,10 @@ hr.style-two {
   text-align: center;
   font-size: 17px;
 }
-.post-title {
-  // margin-left: 1.7em;
-  font-size: 23px;
-  color: $green;
+.left-title {
+  margin-right: -6em;
+  color: $red;
+  font-weight: 600;
 }
 input {
   margin: 8px;
@@ -28,6 +28,10 @@ body {
   letter-spacing: 2px;
 }
 
-// .create-button {
-//   // margin-left: 2em;
-// }
+.post-snippet, .review-snippet {
+  text-align: left;
+}
+
+.review-snippet {
+  margin-left: 2em;
+}

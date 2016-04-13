@@ -2,20 +2,35 @@
 <br>
 <br>
 {{#unless isEditable}}
-  <div class="row">
-    <div class="col-sm-3">{{review.post.title}}</div>
-    <div class="col-sm-3">{{review.rating}}</div>
-    <div class="col-sm-6">{{review.comment}}</div>
+  <div class="row review-snippet">
+    <div class="col-xs-6 col-sm-4 left-title">Pepper</div>
+    <div class="col-xs-12 col-md-8">{{review.post.title}}</div>
+  </div>
+  <div class="row review-snippet">
+    <div class="col-xs-6 col-sm-4 left-title">Rating</div>
+    <div class="col-xs-12 col-md-8">{{review.rating}}</div>
+  </div>
+  <div class="row review-snippet">
+    <div class="col-xs-6 col-sm-4 left-title">Comment</div>
+    <div class="col-xs-12 col-md-8">{{review.comment}}</div>
   </div>
   <hr class="style-two">
 
-
 {{else}}
-<div class="row">
-  <div class="col-sm-3">{{review.post.title}}</div>
-  <div class="col-sm-3">Rating: {{input value=review.rating}}</div>
-  <div class="col-sm-6">Comment: {{input value=review.comment}}</div>
-  <button {{action 'updateReview'}} class="btn btn-default">EDIT</button>
-  <button {{action 'destroyReview'}} class="btn btn-danger">DELETE</button>
-</div>
+  <div class="row review-snippet">
+    <div class="col-xs-6 col-sm-4 left-title">Pepper</div>
+    <div class="col-xs-12 col-md-8">{{review.post.title}}</div>
+  </div>
+  <div class="row review-snippet">
+    <div class="col-xs-6 col-sm-4 left-title">Rating</div>
+    <div class="col-xs-12 col-md-8">{{input value=review.rating}}</div>
+  </div>
+  <div class="row review-snippet">
+    <div class="col-xs-6 col-sm-4 left-title">Comment</div>
+    <div class="col-xs-12 col-md-8">{{input value=review.comment}}</div>
+  </div>
+  <div class="row">
+    <button {{action 'updateReview'}} class="btn btn-default">EDIT</button>
+    <button {{action 'destroyReview'}} class="btn btn-danger">DELETE</button>
+  </div>
 {{/unless}}
