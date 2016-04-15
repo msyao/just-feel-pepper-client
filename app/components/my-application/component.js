@@ -1,3 +1,4 @@
+// my-application/component.js
 import Ember from 'ember';
 
 export default Ember.Component.extend({
@@ -8,7 +9,9 @@ export default Ember.Component.extend({
 
   actions: {
     signOut () {
-      this.sendAction('signOut').then(() => this.transitionTo('application'));
+      this.sendAction('signOut');
+      console.log("component action: sign out");
+      // .then(() => this.transitionTo('application'));
     }
   }
 });
