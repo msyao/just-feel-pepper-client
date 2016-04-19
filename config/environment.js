@@ -40,8 +40,10 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
-  }
+  ENV.host = 'https://enigmatic-reef-66348.herokuapp.com';
+  ENV.baseURL = '/just-feel-pepper/';
+  ENV.locationType = 'hash';
+}
 
   return ENV;
 };
