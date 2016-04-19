@@ -1,9 +1,10 @@
 import Ember from 'ember';
 import ActiveModelAdapter from 'active-model-adapter';
+import config from '../config/environment';
 
 export default ActiveModelAdapter.extend({
   auth: Ember.inject.service(),
-
+  host: 'https://enigmatic-reef-66348.herokuapp.com',
   headers: Ember.computed('auth.credentials.token', {
     get() {
       let headers = {};
