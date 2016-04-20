@@ -1,8 +1,9 @@
 # Just Feel Pepper
 WDI Capstone Project: A Pepper Review app by Yao.
+![Logo](app/screenshot.png?raw=true)
 
 ##User Story & Wireframes & ERD
-Both of these are viewable on [Trello](https://trello.com/b/Q1Rcw2Lr/take-a-veyhttps://trello.com/b/FzoDbOkG/just-feel-pepper).
+Please view the user story and wireframes on [Trello](https://trello.com/b/FzoDbOkG/just-feel-pepper).
 
 ##Explanation of App
 This web app allows logged-in users to post rating and reviews on peppers.
@@ -29,7 +30,7 @@ This web app allows logged-in users to post rating and reviews on peppers.
 -   Axure
 
 ##Deployed front end link
-Please [Just Feel Pepper]().
+Please [Just Feel Pepper](http://msyao.github.io/just-feel-pepper-client/).
 
 ##Capstone back end repo
 [Just Feel Pepper Back End](https://github.com/msyao/just-feel-pepper-api).
