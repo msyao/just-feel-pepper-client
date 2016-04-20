@@ -1,5 +1,6 @@
 # Just Feel Pepper
 WDI Capstone Project: A Pepper Review app by Yao.
+
 ![Logo](app/screenshot.png?raw=true)
 
 ##User Story & Wireframes & ERD
@@ -36,5 +37,5 @@ Please [Just Feel Pepper](http://msyao.github.io/just-feel-pepper-client/).
 [Just Feel Pepper Back End](https://github.com/msyao/just-feel-pepper-api).
 
 ##Future Features
-1. Have pepper-shaped rating icons for users to rate and calculate average spiciness from data
-2. Implement search functionality for users to search reviews and content
+1. Have pepper-shaped rating icons for users to rate and calculate average spiciness from data.
+2. Implement 3rd party API and seach rfunctionality for users to discover peppers in different locations.
