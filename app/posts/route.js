@@ -16,6 +16,10 @@ export default Ember.Route.extend({
         .then(() => {
           this.get('flashMessages')
           .success('You have created a post!');
+        })
+        .catch(() => {
+          this.get('flashMessages')
+          .danger('Sorry, you must be admin to create post!.');
         });
     },
     updatePost: function(post) {
@@ -24,7 +28,6 @@ export default Ember.Route.extend({
     },
     destroyPost: function(post){
       console.log('Route Action : destroyPost');
-    //  post.get('review').forEach((review)=>review.destroyRecord());
       post.destroyRecord();
     }
   }
