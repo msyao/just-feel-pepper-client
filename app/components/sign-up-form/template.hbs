@@ -1,12 +1,23 @@
 <!-- components/sign-up-form/template.hbs -->
-{{email-input email=credentials.email}}
-{{password-input password=credentials.password}}
-{{password-confirmation-input password=credentials.passwordConfirmation}}
+<div class="row">
+  <div class="col-xs-6 col-lg-4">
+    {{email-input email=credentials.email}}
+    {{password-input password=credentials.password}}
+    {{password-confirmation-input password=credentials.passwordConfirmation}}
 
-<button type="submit" class="btn btn-success" {{action "submit"}}>
-  Sign Up
-</button>
+    <div class="login-bottom">
+    <button type="submit" class="btn btn-success" {{action "submit"}}>
+      Sign Up
+    </button>
 
-<button class="btn btn-default" {{action "reset"}}>
-  Cancel
-</button>
+    <button class="btn btn-default" {{action "reset"}}>
+      Cancel
+    </button>
+  </div> <!-- login bottom-->
+  </div>
+
+    <div class="col-xs-12 col-sm-6 col-lg-8">
+
+    <img class="pepperimg" src="http://oi63.tinypic.com/t7ykjr.jpg">
+  </div>
+</div>

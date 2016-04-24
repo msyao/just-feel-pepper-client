@@ -1,15 +1,22 @@
 <!-- components/sign-in-form/template.hbs -->
+<div class="row">
+  <div class="col-xs-6 col-lg-4">
+    {{email-input email=credentials.email}}
+    {{password-input password=credentials.password}}
+    <div class="login-bottom">
+      <button type="submit" class="btn btn-success" {{action "submit"}}>
+        Sign In
+      </button>
+      <button class="btn btn-default" {{action "reset"}}>
+        Cancel
+      </button>
+    </div> <!-- login bottom-->
+    <br><br>
+    <p class="login-bottom"> New to JFP? {{#link-to "sign-up"}}Sign Up{{/link-to}}</p>
 
-{{email-input email=credentials.email}}
-{{password-input password=credentials.password}}
+  </div>
 
-<button type="submit" class="btn btn-success" {{action "submit"}}>
-  Sign In
-</button>
-
-<button class="btn btn-default" {{action "reset"}}>
-  Cancel
-</button>
-
-<br><br>
-<p> New to JFP? {{#link-to "sign-up"}}Sign Up{{/link-to}}</p>
+  <div class="col-xs-12 col-sm-6 col-lg-8">
+    <img class="pepperimg" src="http://oi63.tinypic.com/t7ykjr.jpg">
+  </div>
+</div>
