@@ -1,6 +1,7 @@
 <!-- component/review-form/template.hbs -->
 <h2> Review A Pepper </h2>
 <br>
+{{#if isAuthenticated}}
 <div class="row">
   <button class="btn btn-success create-button" data-toggle="collapse" data-target="#review-form"> Add A Review </button>
 </div>
@@ -15,3 +16,4 @@
 <br>
 <br>
 <br>
+{{/if}}
