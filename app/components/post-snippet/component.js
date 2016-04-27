@@ -2,13 +2,14 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-//  tagName: 'li',
-
   // need to change to average review rating of hotness
   // numReviews: Ember.computed('post.reviews.@each', function(){
   //   return this.get('post.reviews').get('length');
   // }),
   // classNames: ['post-snippet'],
+  auth: Ember.inject.service(),
+  isAuthenticated: Ember.computed.alias('auth.isAuthenticated'),
+
   isEditable: false,
   actions: {
     updatePost: function(){

@@ -1,2 +1,6 @@
 {{hamburger-menu}}
+{{#unless isAuthenticated}}
 {{#link-to "application" class="navbar-brand jfp-header"}}Just Feel Pepper{{/link-to}}
+{{else}}
+<div class="navbar-brand jfp-header">Just Feel Pepper</div>
+{{/unless}}

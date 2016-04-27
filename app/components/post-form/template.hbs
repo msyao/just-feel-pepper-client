@@ -1,6 +1,7 @@
 <!-- component/post-form/template.hbs -->
 <h2> Make It Pepper With A Post! </h2>
 <br>
+{{#if isAuthenticated}}
 <div class="row">
   <button class="btn btn-success create-button" data-toggle="collapse" data-target="#post-form"> Add A Pepper </button>
 </div>
@@ -12,9 +13,7 @@
     <button {{action 'createPost'}} class="btn btn-warning create-button">Create!</button>
   </div>
 </div>
-
-
-
 <br>
 <br>
 <br>
+{{/if}}
