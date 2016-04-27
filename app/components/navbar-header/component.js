@@ -3,5 +3,8 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   tagName: 'div',
-  classNames: ['navbar-header']
+  classNames: ['navbar-header'],
+  auth: Ember.inject.service(),
+
+  isAuthenticated: Ember.computed.alias('auth.isAuthenticated')
 });
